@@ -21,7 +21,7 @@ var options = {
 axios.request(options).then(function (response) {
     let topList = [];
     app.get('/',(req,res)=>{
-       response.data.tracks.forEach(movie=>{
+        response.data.tracks.forEach(movie=>{
             topList.push(movie.title);
         })
         res.send(response.data);
