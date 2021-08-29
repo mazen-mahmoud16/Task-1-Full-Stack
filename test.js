@@ -25,6 +25,7 @@ axios.request(options).then(function (response) {
             topList.push(movie.title);
         })
         res.send(response.data);
+        console.log(process.env.NOURAN_API);
     });
     
 }).catch(function (error) {
